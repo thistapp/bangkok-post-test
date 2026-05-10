@@ -25,7 +25,7 @@ const ShippingComponent = (data: ShippingMenuModel) => {
 							alt='Paper Shipping'
 							width={100}
 							height={100}
-							className='absolute top-0 z-0 w-36 left-28 -rotate-45'
+							className='absolute top-0 z-0 w-36 left-0 lg:left-28 -rotate-45'
 						/>
 					</div>
 				) : (

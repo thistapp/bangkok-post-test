@@ -17,7 +17,7 @@ const HeaderComponents = () => {
 			<div className='my-auto w-1/2'>
 				<Link href={"/"}>
 					<Image
-						src={"/icon/BangkokPost.png"}
+						src={"/icon/bp-logo.svg"}
 						width={100}
 						height={100}
 						alt=''
@@ -67,25 +67,24 @@ const HeaderComponents = () => {
 				}`}
 			>
 				<div className='w-full flex flex-col justify-center items-center mt-24 text-[#0054C6] gap-6 text-2xl'>
-					<p>
-						<button className='flex items-center gap-2 text-[#0054C6] '>
-							<svg
-								xmlns='http://www.w3.org/2000/svg'
-								width='28'
-								height='28'
-								viewBox='0 0 24 24'
-								fill='none'
-								stroke='currentColor'
-								strokeWidth='1.5'
-								strokeLinecap='round'
-								strokeLinejoin='round'
-							>
-								<circle cx='12' cy='12' r='10' />
-								<circle cx='12' cy='10' r='3' />
-								<path d='M7 20.662v-1.162a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1.162' />
-							</svg>
-							<span className='font-medium'>Sign in</span>
-						</button>
+					<p className='flex items-center gap-2 text-[#0054C6] '>
+						<svg
+							className='text-[#0054C6]'
+							xmlns='http://www.w3.org/2000/svg'
+							width='28'
+							height='28'
+							viewBox='0 0 24 24'
+							fill='none'
+							stroke='currentColor'
+							strokeWidth='1.5'
+							strokeLinecap='round'
+							strokeLinejoin='round'
+						>
+							<circle cx='12' cy='12' r='10' />
+							<circle cx='12' cy='10' r='3' />
+							<path d='M7 20.662v-1.162a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1.162' />
+						</svg>
+						<span className='font-medium'>Sign in</span>
 					</p>
 					{HeaderMenus.map((menu, index) => (
 						<p

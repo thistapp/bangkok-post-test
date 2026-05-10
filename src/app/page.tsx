@@ -36,7 +36,7 @@ export default function Home() {
 			</div>
 			{/* section 5 shipping */}
 			<div className='w-full h-full bg-white flex flex-col items-center px-8 py-12 text-center'>
-				<h1 className='text-[32px] whitespace-pre-wrap mb-8'>
+				<h1 className='text-2xl lg:text-[32px] whitespace-pre-wrap mb-8'>
 					{`Choose the format you prefer, and enjoy\neven more with your subscription.`}
 				</h1>
 				<div className='w-10/12 flex flex-wrap justify-center gap-8'>

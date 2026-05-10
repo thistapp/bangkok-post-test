@@ -19,7 +19,7 @@ const FooterComponents = () => {
 			<div className='w-full flex lg:hidden flex-wrap text-sm gap-2'>
 				<div className='w-full flex flex-wrap gap-4 p-4'>
 					<p className='font-bold text-lg'>Troubleshoot ?</p>
-					<p>
+					<p className='text-xs'>
 						Contact{" "}
 						<Link
 							href={"mailto:enewspaper@bangkokpost.co.th"}

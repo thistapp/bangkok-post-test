@@ -9,7 +9,10 @@ const FuqComponent = () => {
 		undefined,
 	);
 	const selectQuestion = (index: number) => {
-		setSelectIndex(index);
+		if (!selectIndex) {
+			setSelectIndex(index);
+		}
+		setSelectIndex(undefined);
 	};
 
 	return (
