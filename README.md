@@ -1,8 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bangkok Post Test
+
+A Next.js web application built with TypeScript and Tailwind CSS.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.x or higher
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/bangkok-post-test.git
+cd bangkok-post-test
+npm install
+```
+
+### Running the Development Server
 
 ```bash
 npm run dev
@@ -14,23 +31,39 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Development Approach
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js 15** — App Router, file-based routing
+- **TypeScript** — Type safety across all components
+- **Tailwind CSS v4** — Utility-first styling
 
-## Deploy on Vercel
+## Optimizations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Area              | Detail                                                                                                                                        |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Shared components | Refactored base components (`InputBaseForm`, `ButtonBaseUI`, `AccordionBase`) to be reusable and consistent across the entire project         |
+| Footer menu       | Fixed inconsistent menu rendering in footer to match the main navigation structure                                                            |
+| Step indicator    | Refactored `StepIndicator` to accept dynamic steps array instead of hardcoded values — supports any number of steps                           |
+| Credit card input | Improved `InputBaseForm` to fully support credit card formatting including card number grouping, expiry date mask, and CVV length enforcement |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Future Improvements
+
+- [ ] Integrate a real payment gateway (e.g. Stripe, Omise)
+- [ ] Add form state management with React Hook Form + Zod validation
+- [ ] Persist subscription plan selection across steps using Zustand or Context API
+- [ ] Add unit tests for input formatting functions with Jest
