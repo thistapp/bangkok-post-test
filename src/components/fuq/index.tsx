@@ -11,7 +11,6 @@ const FuqComponent = () => {
 	const selectQuestion = (index: number) => {
 		debugger;
 		if (selectIndex === undefined) {
-			console.log("test");
 			setSelectIndex(index);
 			return;
 		}
